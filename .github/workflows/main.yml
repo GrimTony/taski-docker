@@ -14,7 +14,7 @@ jobs:
         image: postgres:13.10
         env:
           POSTGRES_USER: django_user
-          POSTGRES_PASSWORD: *cKLhW&!nhao
+          POSTGRES_PASSWORD: "*cKLhW&!nhao"
           POSTGRES_DB: django
         ports:
           - 5432:5432
@@ -35,7 +35,7 @@ jobs:
     - name: Test with flake8 and django tests 
       env:
         POSTGRES_USER: django_user
-        POSTGRES_PASSWORD: *cKLhW&!nhao
+        POSTGRES_PASSWORD: "*cKLhW&!nhao"
         POSTGRES_DB: django
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
