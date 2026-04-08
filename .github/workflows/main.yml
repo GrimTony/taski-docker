@@ -62,4 +62,4 @@ jobs:
       with:
         context: ./backend/
         push: true
-        tags: grimton1/taski_backend:latest 
+        tags: grimton1/taski_backend:latest
