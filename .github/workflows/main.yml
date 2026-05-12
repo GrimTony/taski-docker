@@ -168,4 +168,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: Деплой Taski успешно выполнен!
+        message: |
+          ${{ github.actor }} задеплоил KittyGram 
+          с сообщением '${{ github.event.commits[0].message }}'.
+          Ссылка https://github.com/${{ github.repository }}/commit/${{github.sha}} для подробностей
