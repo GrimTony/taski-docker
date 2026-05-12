@@ -169,6 +169,6 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ github.actor }} задеплоил KittyGram 
+          ${{ github.actor }} задеплоил Taski 
           с сообщением '${{ github.event.commits[0].message }}'.
           Ссылка https://github.com/${{ github.repository }}/commit/${{github.sha}} для подробностей
